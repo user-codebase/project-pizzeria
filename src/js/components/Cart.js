@@ -113,7 +113,7 @@ class Cart{
       const thisCart = this;
       const url = settings.db.url + '/' + settings.db.orders;
 
-      const payload = {}
+      const payload = {};
       payload.address = thisCart.dom.address.value;
       payload.phone = thisCart.dom.phone.value;
       payload.totalPrice = thisCart.totalPrice;
