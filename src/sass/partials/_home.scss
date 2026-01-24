@@ -1,0 +1,215 @@
+  .home-wrapper {
+    margin: ($base-size * 3.5) auto;
+    padding: ($base-size * 6) ($base-size * 4);
+    background: $color-light;
+    border-bottom: 1px solid lighten($color-dark, 70%);
+    border-radius: $radius;
+  }
+  .boxes{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+  }
+
+  .row-boxes{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 100px;
+  }
+  .box-1,
+  .box-2{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .dynamic-text {
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+
+  .box-1:hover .dynamic-text {
+    transform: translateY(-10px);
+  }
+
+  .box-1{
+    background-image: url('../../assets/pizza-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    z-index: 10;
+  }
+  .box-text {
+    transition: transform 0.3s ease;
+  }
+  .box-1:hover .box-text,
+  .box-2:hover .box-text{
+    transform: translateY(-15px);
+  }
+
+  .box-2{
+    background-image: url('../../assets/pizza-2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: all 0.5s ease;
+  }
+
+  .box-bottom{
+    border-radius: 5px;
+    background-color: rgba($color: red, $alpha: 0.6);
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .text-4{
+    font-weight: bold;
+    font-size: 22px;
+  }
+  .text-5{
+    font-size: 12px;
+  }
+  .main-carousel{
+    margin-top: 70px;
+    margin-bottom: 20px;
+    height: 200px;
+  }
+  .carousel-cell {
+    width: 100%;
+    height: 160px;
+    margin-right: 10px;
+  }
+  .carousel-row{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 100%;
+  }
+  .carousel-photo{
+    flex: 1;
+    overflow: hidden;
+  }
+  .carousel-text{
+    flex: 2;
+    height: 100%;
+    padding-left: 15px;
+    padding-right: 40px;
+  }
+  .carousel-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .c-title{
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .c-par{
+    font-size: 13px;
+  }
+  .c-author{
+    font-size: 13px;
+  }
+  .gallery{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 70px;
+  }
+  .gallery-row{
+    display: flex;
+    flex-direction: row;
+    height: 180px;
+    gap: 10px;
+  }
+  .photo-holder {
+  position: relative;
+  flex: 1;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  overflow: hidden;
+}
+  .photo-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 5;
+}
+.photo-holder:hover .photo-overlay {
+  opacity: 1;
+}
+  .photo-1{
+    background-image: url('../../assets/pizza-4.jpg');
+  }
+  .photo-2{
+    background-image: url('../../assets/pizza-5.jpg');
+  }
+  .photo-3{
+    background-image: url('../../assets/pizza-6.jpg');
+  }
+  .photo-4{
+    background-image: url('../../assets/pizza-7.jpg');
+  }
+  .photo-5{
+    background-image: url('../../assets/pizza-8.jpg');
+  }
+  .photo-6{
+    background-image: url('../../assets/pizza-9.jpg');
+    width: 100%;
+  }
+  .photo-hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 10;
+}
+  .photo-holder:hover{
+    background-color: green($color: #000000);
+  }
+  .photo-holder:hover .photo-hover {
+  opacity: 1;
+}
+
+  .photo-hover i {
+  color: white;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+  .photo-hover i:hover{
+    color: #ff6b6b;
+    cursor: pointer;
+  }
+
+.text-link{
+  color: #ff6b6b;
+}

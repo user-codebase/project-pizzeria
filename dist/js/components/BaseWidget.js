@@ -8,6 +8,7 @@ class BaseWidget{
 
   get value(){
     const thisWidget = this;
+    console.log('thisWidget.correctValue', thisWidget.correctValue);
     return thisWidget.correctValue;
   }
 

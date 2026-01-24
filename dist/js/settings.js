@@ -3,12 +3,14 @@ export const select = {
     menuProduct: "#template-menu-product",
     cartProduct: '#template-cart-product', // CODE ADDED
     bookingWidget: '#template-booking-widget',
+    homeWidget: '#template-home-widget',
   },
   containerOf: {
     menu: '#product-list',
     cart: '#cart',
     pages: '#pages',
     booking: '.booking-wrapper',
+    home: '.home-wrapper',
   },
   all: {
     menuProducts: '#product-list > .product',
@@ -65,7 +67,7 @@ export const select = {
     formSubmit: '.cart__order [type="submit"]',
     phone: '[name="phone"]',
     address: '[name="address"]',
-    },
+  },
   cartProduct: {
     amountWidget: '.widget-amount',
     price: '.cart__product-price',
@@ -73,6 +75,10 @@ export const select = {
     remove: '[href="#remove"]',
   },
   // CODE ADDED END
+  home: {
+    orderBox: '.order-box',
+    bookingBox: '.booking-box',
+  },
 };
 
 export const classNames = {
@@ -138,4 +144,7 @@ export const templates = {
   cartProduct: Handlebars.compile(document.querySelector(select.templateOf.cartProduct).innerHTML),
   // CODE ADDED END
   bookingWidget: Handlebars.compile(document.querySelector(select.templateOf.bookingWidget).innerHTML),
+
+  homeWidget: Handlebars.compile(document.querySelector(select.templateOf.homeWidget).innerHTML),
+
 };

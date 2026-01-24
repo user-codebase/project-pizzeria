@@ -9,6 +9,8 @@
   <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <link rel="stylesheet" href="vendor/range-slider.min.css">
+  <link rel="stylesheet" href="vendor/flickity.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -21,6 +23,7 @@
           <h2 class="logo__subtitle">the best homemade Italian food</h2>
         </div>
         <div class="main-nav">
+          <a href="#home">Home</a>
           <a href="#order">Order</a>
           <a href="#booking">Booking</a>
         </div>
@@ -63,6 +66,9 @@
 
   <!-- <div id="product-list" class="product-list container"></div> -->
   <div id="pages">
+    <section id="home">
+      <div class="home-wrapper container"></div>
+    </section>
     <section id="order">
       <div id="product-list" class="product-list container"></div>
     </section>
@@ -243,8 +249,114 @@
       </form>
     </div>
   </script>
+  <script id="template-home-widget" type="text/x-handlebars-template">
+    <div class="home-widget">
+      <div class="boxes">
+        <div class="row-boxes">
+          <div class="box-1 text-4 order-box" action="order">
+            <span class="box-text">ORDER ONLINE</span>
+          </div>
+          <div class="box-2 text-4 booking-box" action="booking">
+            <span class="box-text">BOOK A TABLE</span>
+          </div>
+        </div>
+        <div class="box-bottom">
+          <p class="text-4">OPENING HOURS:</p>
+          <p class="text-5">TUE-SUN, 12PM - 12AM</p>
+        </div>
+      </div>
+      <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "autoPlay": true }'>
+        <div class="carousel-cell">
+          <div class="carousel-row">
+            <div class="carousel-photo">
+              <img src="assets/pizza-3.jpg" alt="">
+            </div>
+            <div class="carousel-text">
+              <h4 class="c-title">AMAZING SERVICE!</h4>
+              <p class="c-par">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas viverra tortor, eu ullamcorper dui imperdiet nec. Nunc sed dolor at elit lobortis sodales.</p>
+              <p class="c-author">– Margaret Osborne</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="carousel-row">
+            <div class="carousel-photo">
+              <img src="assets/pizza-3.jpg" alt="">
+            </div>
+            <div class="carousel-text">
+              <h4 class="c-title">DELICIOUS!</h4>
+              <p class="c-par">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas viverra tortor, eu ullamcorper dui imperdiet nec. Nunc sed dolor at elit lobortis sodales.</p>
+              <p class="c-author">– Margaret Osborne</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="carousel-row">
+            <div class="carousel-photo">
+              <img src="assets/pizza-3.jpg" alt="">
+            </div>
+            <div class="carousel-text">
+              <h4 class="c-title">SUPER PLACE!</h4>
+              <p class="c-par">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas viverra tortor, eu ullamcorper dui imperdiet nec. Nunc sed dolor at elit lobortis sodales.</p>
+              <p class="c-author">– Margaret Osborne</p>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="gallery">
+          <div class="gallery-row">
+            <div class="photo-holder photo-1">
+              <div class="photo-overlay"></div>
+              <div class="photo-hover">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+              </div>
+            </div>
+            <div class="photo-holder photo-2">
+              <div class="photo-overlay"></div>
+              <div class="photo-hover">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+              </div>
+            </div>
+            <div class="photo-holder photo-3">
+              <div class="photo-overlay"></div>
+              <div class="photo-hover">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-row">
+            <div class="photo-holder photo-4">
+              <div class="photo-overlay"></div>
+              <div class="photo-hover">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+              </div>
+            </div>
+            <div class="photo-holder photo-5">
+              <div class="photo-overlay"></div>
+              <div class="photo-hover">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+              </div>
+            </div>
+            <div class="photo-holder photo-6">
+              <div class="photo-overlay"></div>
+              <div class="photo-hover">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="text-link"><a href="#">View more on Instagram</a></p>
+      </div>
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <script src="vendor/range-slider.min.js"></script>
+  <script src="vendor/flickity.pkgd.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
   <script src="js/app.js" type="module"></script>
 </body>

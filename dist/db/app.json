@@ -266,29 +266,66 @@
   "bookings": [
     {
       "date": "2026-01-30",
-      "hour": "19:30",
+      "hour": "15:30",
       "table": 3,
-      "duration": 2,
-      "ppl": 6,
-      "starters": [
-        "water"
-      ],
-      "phone": "123-456",
-      "address": "qwe",
+      "duration": 3,
+      "ppl": 2,
+      "starters": [],
+      "phone": "",
+      "address": "",
       "id": 1
     },
     {
       "date": "2026-01-30",
-      "hour": "19:30",
-      "table": 1,
-      "duration": 2,
-      "ppl": 8,
+      "hour": "15:30",
+      "table": 3,
+      "duration": 3,
+      "ppl": 2,
       "starters": [
-        "water"
+        "bread"
       ],
-      "phone": "123-456",
-      "address": "qwe",
+      "phone": "123",
+      "address": "polkj",
       "id": 2
+    },
+    {
+      "date": "2026-01-30",
+      "hour": "15:30",
+      "table": 3,
+      "duration": 3,
+      "ppl": 2,
+      "starters": [
+        "bread"
+      ],
+      "phone": "123",
+      "address": "polkj",
+      "id": 3
+    },
+    {
+      "date": "2026-01-30",
+      "hour": "15:30",
+      "table": 3,
+      "duration": 3,
+      "ppl": 2,
+      "starters": [
+        "bread"
+      ],
+      "phone": "123",
+      "address": "polkj",
+      "id": 4
+    },
+    {
+      "date": "2026-01-30",
+      "hour": "15:30",
+      "table": 3,
+      "duration": 3,
+      "ppl": 2,
+      "starters": [
+        "bread"
+      ],
+      "phone": "123",
+      "address": "polkj",
+      "id": 5
     }
   ]
 }
