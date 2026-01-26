@@ -202,7 +202,18 @@
       }
     }
   ],
-  "orders": [],
+  "orders": [
+    {
+      "address": "",
+      "phone": "",
+      "totalPrice": 20,
+      "subtotalPrice": 0,
+      "totalNumber": 0,
+      "deliveryFee": 20,
+      "products": [],
+      "id": 1
+    }
+  ],
   "events": [
     {
       "id": 1,
@@ -265,67 +276,17 @@
   ],
   "bookings": [
     {
-      "date": "2026-01-30",
+      "date": "2026-02-06",
       "hour": "15:30",
       "table": 3,
       "duration": 3,
-      "ppl": 2,
-      "starters": [],
-      "phone": "",
-      "address": "",
+      "ppl": 6,
+      "starters": [
+        "water"
+      ],
+      "phone": "asd",
+      "address": "asdasd",
       "id": 1
-    },
-    {
-      "date": "2026-01-30",
-      "hour": "15:30",
-      "table": 3,
-      "duration": 3,
-      "ppl": 2,
-      "starters": [
-        "bread"
-      ],
-      "phone": "123",
-      "address": "polkj",
-      "id": 2
-    },
-    {
-      "date": "2026-01-30",
-      "hour": "15:30",
-      "table": 3,
-      "duration": 3,
-      "ppl": 2,
-      "starters": [
-        "bread"
-      ],
-      "phone": "123",
-      "address": "polkj",
-      "id": 3
-    },
-    {
-      "date": "2026-01-30",
-      "hour": "15:30",
-      "table": 3,
-      "duration": 3,
-      "ppl": 2,
-      "starters": [
-        "bread"
-      ],
-      "phone": "123",
-      "address": "polkj",
-      "id": 4
-    },
-    {
-      "date": "2026-01-30",
-      "hour": "15:30",
-      "table": 3,
-      "duration": 3,
-      "ppl": 2,
-      "starters": [
-        "bread"
-      ],
-      "phone": "123",
-      "address": "polkj",
-      "id": 5
     }
   ]
 }
